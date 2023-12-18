@@ -1,4 +1,5 @@
 
+import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/shared/Navbar/Navbar'
 
 
@@ -13,7 +14,10 @@ export default function Template({ children }) {
         <div
         >
             <Navbar />
-            {children}
+            <div className='min-h-[calc(100vh-110px-492px)]'>
+                {children}
+            </div>
+            <Footer />
 
         </div>
 

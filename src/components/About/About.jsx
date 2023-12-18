@@ -5,7 +5,7 @@ import Image from 'next/image';
 const About = () => {
 	return (
 		<section>
-			<div className="container px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+			<div className="container px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 text-[var(--secondary-color)]">
 				<div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
 					<div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
 						<h2 className="text-3xl font-bold sm:text-4xl">Why Choose Us</h2>
@@ -31,9 +31,9 @@ const About = () => {
 					<div className="grid gap-4 grid-cols-2">
 						<motion.a
 							initial={{ opacity: 0, scale: 0.5 }}
-							animate={{ opacity: 1, scale: 1 }}
+							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{
-								duration: 0.8,
+								duration: 0.5,
 								delay: 0.5,
 								ease: [0, 0.71, 0.2, 1.01],
 							}}
@@ -49,7 +49,9 @@ const About = () => {
 								></Image>
 							</span>
 
-							<h2 className="mt-2 font-bold">Proven Expertise</h2>
+							<h2 className="mt-2 text-sm md:text-base font-bold">
+								Proven Expertise
+							</h2>
 
 							<p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
 								Enhance your digital presence with our experienced team
@@ -58,9 +60,9 @@ const About = () => {
 
 						<motion.a
 							initial={{ opacity: 0, scale: 0.5 }}
-							animate={{ opacity: 1, scale: 1 }}
+							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{
-								duration: 0.8,
+								duration: 0.5,
 								delay: 0.5,
 								ease: [0, 0.71, 0.2, 1.01],
 							}}
@@ -76,7 +78,9 @@ const About = () => {
 								></Image>
 							</span>
 
-							<h2 className="mt-2 font-bold">Collaborative Approach</h2>
+							<h2 className="mt-2 text-sm md:text-base font-bold">
+								Collaborative Approach
+							</h2>
 
 							<p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
 								Discover innovation by working together.
@@ -85,9 +89,9 @@ const About = () => {
 
 						<motion.a
 							initial={{ opacity: 0, scale: 0.5 }}
-							animate={{ opacity: 1, scale: 1 }}
+							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{
-								duration: 0.8,
+								duration: 0.5,
 								delay: 0.5,
 								ease: [0, 0.71, 0.2, 1.01],
 							}}
@@ -103,7 +107,9 @@ const About = () => {
 								></Image>
 							</span>
 
-							<h2 className="mt-2 font-bold">Comprehensive Services</h2>
+							<h2 className="mt-2 text-sm md:text-base font-bold">
+								Comprehensive Services
+							</h2>
 
 							<p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
 								All of your digital needs are easily met by our services
@@ -112,9 +118,9 @@ const About = () => {
 
 						<motion.a
 							initial={{ opacity: 0, scale: 0.5 }}
-							animate={{ opacity: 1, scale: 1 }}
+							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{
-								duration: 0.8,
+								duration: 0.5,
 								delay: 0.5,
 								ease: [0, 0.71, 0.2, 1.01],
 							}}
@@ -130,7 +136,9 @@ const About = () => {
 								></Image>
 							</span>
 
-							<h2 className="mt-2 font-bold">Results-Driven</h2>
+							<h2 className="mt-2 text-sm md:text-base font-bold">
+								Results-Driven
+							</h2>
 
 							<p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
 								We produce exceptional outcomes in addition to making promises.
