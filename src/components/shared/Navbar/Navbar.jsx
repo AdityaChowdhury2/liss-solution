@@ -12,10 +12,10 @@ import {
 } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 
-const variants = {
-	hidden: { opacity: 0, x: -200, y: -5 },
-	enter: { opacity: 1, x: 0, y: -5 },
-};
+// const variants = {
+// 	hidden: { opacity: 0, x: -200, y: -5 },
+// 	enter: { opacity: 1, x: 0, y: -5 },
+// };
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +48,7 @@ const Navbar = () => {
 						<MdOutlineKeyboardArrowDown />
 					)}
 				</div>
-				{subMenuOpen && (
+				{subMenuOpen ? (
 					<motion.main
 						initial={{ opacity: 0, scale: 0.5 }}
 						animate={{ opacity: 1, scale: 0.9 }}
@@ -92,6 +92,8 @@ const Navbar = () => {
 							</li>
 						</ul>
 					</motion.main>
+				) : (
+					<></>
 				)}
 			</li>
 			<li>
@@ -117,8 +119,9 @@ const Navbar = () => {
 		</ul>
 	);
 	return (
-		<div on>
-			<nav className="w-full bg-[var(--primary-color)] fixed top-0 left-0 right-0 z-10 text-[var(--white-color)] px-2 md:px-0">
+		<div>
+			{/* fixed top-0 left-0 right-0 z-10 */}
+			<nav className="w-full bg-[var(--primary-color)]  text-[var(--white-color)] px-2 md:px-0">
 				<div className="container">
 					<div className="justify-between px-4 md:items-center md:flex md:px-8">
 						<div className="flex items-center justify-between py-3 md:py-5">
