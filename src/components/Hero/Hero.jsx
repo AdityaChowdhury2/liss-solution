@@ -2,10 +2,10 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const variants = {
-	hidden: { opacity: 0, x: -100, y: -5 },
-	enter: { opacity: 1, x: 0, y: -5 },
-};
+// const variants = {
+// 	hidden: { opacity: 0, x: -100, y: -5 },
+// 	enter: { opacity: 1, x: 0, y: -5 },
+// };
 
 const Hero = () => {
 	return (
@@ -17,7 +17,7 @@ const Hero = () => {
 			>
 				<motion.h1
 					variants={{
-						hidden: { opacity: 0, x: -100, y: -5 },
+						hidden: { opacity: 0, x: -50, y: -5 },
 						enter: { opacity: 1, x: 0, y: -5 },
 					}}
 					initial="hidden"
@@ -42,7 +42,7 @@ const Hero = () => {
 			</div>
 			<motion.div
 				variants={{
-					hidden: { opacity: 0, x: 300, y: -5 },
+					hidden: { opacity: 0, x: 0, y: 200 },
 					enter: { opacity: 1, x: 0, y: -5 },
 				}}
 				initial="hidden"

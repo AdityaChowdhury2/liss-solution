@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 :root{
-  --primary-color: #ff6f59;
+  --primary-color: #fa664f;
+  --primary-color-hover: #ff4c30;
   --secondary-color: #4a4f64;
   --white-color: #f6fafd;
 }
